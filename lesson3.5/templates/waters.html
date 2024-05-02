@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water page</title>
+</head>
+<body>
+    <h1>This is water page</h1><br>
+    {% for water in waters %}
+    <a href="{% url 'get_about' water.pk %}">{{water.w_name}}</a><br>
+    {% endfor %}
+
+</body>
+</html>

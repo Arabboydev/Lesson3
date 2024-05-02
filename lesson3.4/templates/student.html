@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student page</title>
+</head>
+<body>
+    <h1>This is student page</h1><br>
+    {% for student in students %}
+        <a href="{% url 'get_about' student.pk %}">{{student.f_name}}</a><br>
+    {% endfor %}
+</body>
+</html>
+
+
